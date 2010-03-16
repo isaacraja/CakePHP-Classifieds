@@ -1,0 +1,28 @@
+<div id="sidebar" class="span-4 colborder">
+	<h3>DashBoard</h3>
+  <h4>Ads</h4>
+	<ul>
+		<li><a href="/classifieds/classifieds/index.php/posts/active">View Active Ads</a></li>
+		<li><a href="/classifieds/classifieds/index.php/posts/inactive">View Inactive Ads</a></li>
+		<li><a href="/classifieds/classifieds/index.php/posts/add">Add New Ad</a></li>	
+  </ul>
+<h4>Events</h4>	
+	<ul>
+	<li><a href="/classifieds/classifieds/index.php/events/active">View Active Events</a></li>
+	<li><a href="/classifieds/classifieds/index.php/events/inactive">View Inactive Events</a></li>
+	<li><a href="/classifieds/classifieds/index.php/events/add">Add New Event</a></li>	
+  </ul>	
+	<h4>Special Pages</h4>
+	<ul>
+	<li><a href="/classifieds/classifieds/index.php/special_pages/active">View Active Special Pages</a></li>
+	<li><a href="/classifieds/classifieds/index.php/special_pages/inactive">View Inactive Special Pages</a></li>
+	<li><a href="/classifieds/classifieds/index.php/special_pages/add">Add New Special pages</a></li>	
+  </ul>
+<h4>Profile</h4>
+  <ul>
+	<li><a href="/classifieds/classifieds/index.php/profiles/edit">Edit Profile</a></li>
+	<li><a href="/classifieds/classifieds/index.php/users/changepass">Change Password</a></li>
+	<li><a href="/classifieds/classifieds/index.php/users/logout">Logout</a></li>	
+  </ul>	
+		
+</div>	

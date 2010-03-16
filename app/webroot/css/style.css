@@ -1,0 +1,270 @@
+/******************************************************************
+ + Forms
+******************************************************************/
+form {
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+form div{
+  margin-bottom: 3px;
+}
+
+form label{
+  display: block;
+  color: #666666;
+  margin-bottom: 3px;
+  clear: right;
+  font-size: .8em;
+}
+
+form input{
+  font-size: 1.2em;
+  padding: 3px;
+}
+
+form select{
+  color: #11090A;
+  padding: 3px;
+  font-size: 1.2em;
+}
+
+form .search-select {
+  font-size: .8em; 
+}
+form .select-client {
+  width: 260px;
+}
+
+
+
+form a {
+  text-decoration: none;
+  color: #33B1E9;
+}
+
+form a:hover {
+  color: #666666;
+}
+
+form .txt {
+  width: 270px; 
+}
+
+form textarea{
+  padding: 3px;
+}
+
+div.submit input {
+ margin-top: 10px;
+ font-size: .9em;
+}
+
+div#search {
+  background: #F7FAFA;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+/* used invoice form */
+#invoicecol1{
+  width: 280px;
+  float: left;
+}
+
+#invoicecol2{
+  width: 280px;
+  float: right;
+}
+
+
+/******************************************************************
+ +Sidebar
+******************************************************************/
+
+h3.heading {
+   color: #999999; 
+   text-transform: uppercase;
+   font-weight: 100;
+}
+
+#sidebar li { 
+  list-style-type: none; 
+  font-size: .8em;
+  color: #666666;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #EFEFEF;
+}
+/*********************************************************************
++Ids
+**********************************************************************/
+
+#header
+{
+  background: #C5E8FF none repeat scroll 0 0;
+  margin-top: 5px;
+}
+
+#content-1
+{
+  background: #FFF none repeat scroll 0 0;
+  padding: 5px;
+}
+
+#bread-crumb
+{
+    padding: 5px;
+    margin: 2px;
+    border: 1px solid #EFEFEF;
+}
+
+.search-options-text-div 
+{
+    background:#FFFFFF none repeat scroll 0 0;
+    float: left;
+    margin: 5px;
+    border:1px solid #FFC13E;
+    font-weight:normal;
+    height:25px;
+    width:380px;
+}
+
+input.search-option-text 
+{
+    background:transparent none repeat scroll 0 0;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size:13px;
+    height:15px;
+    line-height:15px;
+    /*margin:5px;*/
+    outline-style:none;
+    outline-width:medium;
+  /* width:425px; */
+}
+
+.search-option-select 
+{
+    background:transparent none repeat scroll 0 0;
+    margin: 0;
+    border: 0;
+    border-left: 1px solid;
+    padding: 0;
+    font-size:15px;
+    /*margin:5px;*/
+    outline-style:none;
+    outline-width:medium;
+    width: 200px; 
+}
+
+#header-right
+{
+    float: right;
+    text-align: right;
+}
+#header-right-menu
+{
+ margin-bottom: 7px;
+}
+
+.left-menu-box
+{
+  background: #FFF1CE none repeat scroll 0 0;
+}
+.left-menu-header
+{
+ background: orange none repeat scroll 0 0;
+ padding-left: 2px;
+ padding-bottom: 5px;
+ border-bottom: 1px solid white;
+ height: 26px;
+
+}
+
+.left-menu-header h3
+{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-left: 5px; 
+}
+
+.filter-option
+{
+    padding: 5px;
+}
+
+#post-item
+{
+ margin-top: 10px;
+}
+#post-item-thumbnail
+{
+ float: left;
+}
+
+#post-item-details
+{
+ padding-left: 155px;
+}
+#post-item-details h3
+{
+ font-size: 16px;
+ margin-bottom: 5px;
+}
+.excerpt 
+{
+  background:transparent url(../img/blockquote.gif) no-repeat scroll 0 3px;
+  padding: 0 20px;
+  padding-top: 10px;
+}
+
+.actions
+{
+  padding-top: 20px;
+}
+
+.price
+{
+ color: black;
+}
+
+#PostAddForm label { width: 250px; }
+label.error { color: red; display: block; background-color: transparent; border:0}
+#PostAddForm { width: 500px; }
+#PostAddForm td.error, #commentForm input.submit { margin-left: 253px; }
+
+input.error {border: 1px solid red; }
+select.error {border: 1px solid red; }
+
+
+#profile-photo
+{
+ float:left;
+margin: 5px
+}
+#post-action
+{
+ float:right;
+}
+
+#post-item-rem
+{
+ clear: both;
+}
+#post-item-image
+{
+  float: right;
+}
+
+/**********************************************************************
++Tag  Elements
+***********************************************************************/body
+{
+    background:#C5E8FF none repeat scroll 0 0;
+}
+

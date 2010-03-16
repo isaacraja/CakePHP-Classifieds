@@ -1,0 +1,8 @@
+<?php
+// app/models/profile.php
+class Profile extends AppModel {
+	var $name = 'Profile';
+	
+	//var $actsAs = array('Sluggable'=> array('label' => 'name' ,'overwrite' => false));
+}
+?>

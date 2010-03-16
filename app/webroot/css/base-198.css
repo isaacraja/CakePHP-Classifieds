@@ -1,0 +1,935 @@
+/*** reseting stuff ***/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: inherit;
+vertical-align: baseline;
+}
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: inherit;
+}
+/* remember to define focus styles! */
+:focus {
+outline: 0;
+}
+body {
+line-height: 1;
+color: #000;
+background: #fff;
+}
+ol, ul {
+list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+border-collapse: separate;
+border-spacing: 0;
+}
+caption, th, td {
+text-align: left;
+font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: "";
+}
+blockquote, q {
+quotes: "" "";
+}
+/*** beloved clearfix ***/
+.clearfix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+/*** /reset ***/
+
+/*** basics ***/
+body {
+background:#fff;
+font:65%/1.4 tahoma, arial, helvetica, sans-serif;
+color:#000;
+text-align:center
+}
+div {
+position:relative
+}
+a {
+color:#00c;
+text-decoration:none
+}
+a:hover {
+border-bottom:1px solid #00c
+}
+h1, h2, h3, h4, h5, h6 {
+font-family:arial,helvetica,sans-serif 
+}
+input, select, textarea {
+font:1.2em/1.4 arial,helvetica,sans-serif;
+}
+strong {
+font-weight:bold
+}
+select {
+height:1.6em;
+}
+
+/* Amazing borders
+================================================*/
+/* Basic styling, used when JavaScript is unsupported */
+#home .cbb {
+margin:0;
+padding:0;
+border:1px solid #f1f1f1;
+background:#fff;
+}
+#home h3 {
+font-size:1.4em;
+font-weight:bold;
+line-height:1;
+}
+#home h3 a, #home h3 a:hover {
+border-bottom:none
+}
+#home h3 a:hover {
+color:#009ed9
+}
+#home h3 small, #home h3 a small, #home h3 a:hover small {
+font-size:.55em;
+font-weight:normal;
+color:#000;
+}
+/* Normal styling */
+.cb {margin: 0;}
+	/* Top corners and border */
+.bt {
+height:5px;
+margin:0 0 0 5px;
+background:url(http://images04.olx.com/images/box-ddd.gif) no-repeat 100% 0;
+}
+.bt div {
+position:relative;
+left:-5px;
+width:5px;
+height:5px;
+background:url(http://images04.olx.com/images/box-ddd.gif) no-repeat 0 0;
+font-size:0;
+line-height:0;
+}
+	/* Bottom corners and border */
+.bb {
+height:5px;
+margin:0 0 0 5px;
+background:url(http://images04.olx.com/images/box-ddd.gif) no-repeat 100% 100%;
+}
+.bb div {
+position:relative;
+left:-5px;
+width:5px;
+height:5px;
+background:url(http://images04.olx.com/images/box-ddd.gif) no-repeat 0 100%;
+font-size:0;
+line-height:0;
+}
+	/* Left border */
+.i1 {
+padding:0 0 0 1px;
+background:url(http://images01.olx.com/images/borders-ddd.gif) repeat-y 0 0;
+}
+	/* Right border */
+.i2 {
+padding:0 1px 0 0;
+background:url(http://images01.olx.com/images/borders-ddd.gif) repeat-y 100% 0;
+}
+	/* Wrapper for the content. Use it to set the background colour and insert some padding between the borders and the content. */
+.i3 {
+display:block;
+margin:0;
+padding:5px;
+position:relative
+}
+	/* Make the content wrapper auto clearing so it will contain floats (see http://positioniseverything.net/easyclearing.html). */
+.i3:after {
+content:"."; 
+display:block; 
+height:0; 
+clear:both; 
+visibility:hidden;
+}
+.i3 {display:inline-block;}
+.i3 {display:block;}
+/* /Default CSS */
+
+/*** some positions ***/
+#supercontainer {
+width:980px;
+margin:0 auto;
+text-align:left;
+}
+#the-content {
+font-size:1.2em;
+margin:0 0 20px;
+}
+#home {
+width:759px;
+float:left;
+}
+#featured {
+width:740px;
+float:left;
+}
+.column {
+width:233px;
+margin-right:20px;
+float:left
+}
+#home-extras {
+float:left;
+width:220px;
+background:#f6f6f6 url(http://images01.olx.com/images/bkg-home-extras.png) repeat-y 0 0;
+font-family:arial,helvetica,sans-serif 
+}
+.chooseStateDiv {
+color:#003;
+background-color:#fff;
+position:absolute;
+top:325px;
+left:220px;
+width:500px;
+height:auto;
+z-index:98;
+font-size:1.2em;
+font-family:arial,helvetica,sans-serif;
+text-align:center;
+border:5px solid #d9d9d9;
+padding:0
+}
+.chooseStateDiv td {
+text-align:center;
+padding:3px
+}
+
+/*** header_keywords ***/
+#header_keywords {
+font:1.1em/1 tahoma,arial,sans-serif;
+text-align:center;
+padding:3px 0 2px 0;
+color:#666;
+overflow:hidden;
+margin:0 auto;
+height:16px;
+}
+
+/*** the header ***/
+#header {
+position:relative;
+/*background: url(http://images01.olx.com/images/h_bk-nw.png) no-repeat 0 0;  c ch */
+background:transparent url(http://images01.olx.com/images/bkg-header-2.png) no-repeat 0 0;
+font-family:arial, helvetica, sans-serif;
+text-align:left;
+}
+#header div.logo {
+position:relative;
+top:1px;
+left:8px;
+width:84px;
+height:65px;
+z-index:1000
+}
+#header div.logo a {
+background:transparent url(http://images03.olx.com/images/h_logo-2.gif) no-repeat 0 0;
+display:block;
+width:100%;
+height:100%;
+text-indent:-1000em
+}
+#lang-olx {
+position:absolute;
+top:5px;
+right:5px;
+width:80%;
+}
+#header div.logo a:hover, .region a:hover {
+border-bottom:0
+}
+#header h1, #userlocale {
+font-weight:normal;
+left:0;
+margin:0 213px 0 100px;
+position:absolute;
+width:680px;
+top:12px;
+font-size:1.6em;
+line-height:1
+}
+.region {
+position:relative;
+font-size:1.1em;
+line-height:1.1;
+padding:5px 12px;
+font-family:tahoma,arial,helvetica,sans-serif;
+}
+.region strong {
+font-weight:normal
+}
+.region a:hover {
+text-decoration:underline;
+border-bottom:0
+}
+#header .post {
+position:absolute;
+text-align:right;
+top:31px;
+right:8px;
+width:auto;
+}
+.post .button3 { /* #h & #h-ex */
+width:auto;
+height:auto;
+font-size:1.2em;
+}
+	/* buttons */
+.button3 {
+background: transparent url(http://images01.olx.com/images/btn-color.png) no-repeat 100% -110px;
+color: #fff;
+display: block;
+float: left;
+height: 25px;
+padding:0;
+margin:0;
+margin-right: 4px;
+padding-right: 12px; /* sliding doors padding */
+text-decoration: none;
+border:0;
+cursor:pointer; 
+font-weight:bold; 
+}
+.button3 span {
+background: transparent url(http://images01.olx.com/images/btn-color.png) no-repeat 0 -110px;
+display: block;
+line-height: 15px;
+padding: 5px 0 5px 12px;
+}
+#header a:hover.button3 {
+border-bottom:0;
+background-position:100% -150px
+}
+#header a:hover.button3 span {
+background-position:0 -150px
+}
+button { 
+border:0; 
+cursor:pointer; 
+font-weight:bold; 
+padding:0 5px 0 0; 
+text-align:center; 
+margin:0 5px
+}
+button span { 
+position:relative; 
+display:block; 
+white-space:nowrap; 
+padding:0 0 0 5px; 
+}
+button.button2 {
+background:url(http://images01.olx.com/images/bkg-search-submit.gif) no-repeat 100% 0;
+width:30px;
+height:21px;
+text-indent:-1000em;
+line-height:20px
+}
+button.button2:hover {
+background-position:100% -21px; 
+}
+.search {
+margin:0;
+padding:0;
+top:28px;
+left:100px;
+position:absolute;
+overflow:hidden
+}
+.search * {
+vertical-align:middle !important
+}
+.search input.text {
+width:250px;
+font-size:1.3em;
+line-height:1.1;
+padding:3px;
+border:1px solid #ddd
+}
+.search select {
+font-size:1.3em;
+height:23px;
+width:auto;
+padding:2px;
+border:1px solid #ddd
+}
+.search p.s-box {
+margin:0;
+line-height:31px;
+height:31px;
+min-height:31px;
+}
+#languages {
+position:relative;
+float:right;
+margin:0 5px;
+font:1.1em/1.4 tahoma,verdana,arial,sans-serif;
+}
+#languages a:hover {
+border-bottom:0
+}
+#header p.pop-rel {
+font-size:1.1em;
+margin:0;
+padding:4px 0 4px 12px;
+border-bottom:1px solid #f1f1f1;
+}
+.popsearchlink {
+color:#009ed9;
+font-size:1.05em
+}
+.keyWords {
+color:#009ed9;
+}
+a.keyWords:hover, a.popsearchlink:hover {
+border-bottom-color:#009ed9;
+border-bottom:0;
+text-decoration:underline
+}
+
+	/* langs */
+
+#comboIdiomas {
+position:absolute;
+top:1.2em;
+right:0;
+z-index:10001;
+width:85px
+}
+#comboIdiomas .cbb {
+background:#fff;
+border:1px solid #ccc;
+padding:7px 13px 6px 12px
+}
+#comboIdiomas .bt, #comboIdiomas .bt div, #comboIdiomas .bb, #comboIdiomas .bb div {
+background-image:url(http://images01.olx.com/images/box-comboidiomas.gif)
+}
+#comboIdiomas .i1 {
+padding:0 0 0 1px;
+background:url(http://images01.olx.com/images/borders-comboidiomas.gif) repeat-y 0 0;
+}
+#comboIdiomas .i2 {
+padding:0 2px 0 0;
+background:url(http://images01.olx.com/images/borders-comboidiomas.gif) repeat-y 100% 0;
+}
+#comboIdiomas .i3 {
+background:#fff;
+position:relative
+}
+#comboIdiomas p {
+margin:0;
+padding:3px 12px 2px 12px
+}
+#comboIdiomas a {
+display:block;
+line-height:1;
+margin-bottom:4px;
+}
+#languages a:hover {
+text-decoration:underline
+}
+
+/*** keywords footer ***/
+#txt-block {
+margin-bottom:15px;
+}
+#txt-block .i3 {
+text-align:center;
+padding:5px 10px
+}
+#txt-block, #kw-footer {
+font:1.2em/1.2 arial,helvetica,sans-serif;
+}
+#kw-footer h3 {
+font-weight:bold
+}
+#kw-footer ul {
+width:23%;
+float:left;
+margin-right:1%
+}
+#kw-footer .i3 {
+padding:5px 10px
+}
+#kw-footer a:hover {
+border-bottom:0;
+text-decoration:underline
+}
+
+/*** footer ***/
+#footer {
+font-size: 1.1em;
+margin: 15px auto 0pt auto;
+width:980px;
+clear:both;
+text-align:left;
+}
+#footer div {
+/*padding:5px 10px;*/
+}
+#footer #copyright {
+float:right;
+}
+#footer .links.cbb {
+padding:7px 13px
+}
+#footer .links {
+background:#f2f2f2;
+position:relative;
+zoom:1
+}
+#footer .links .i3 {
+
+}
+#footer .links .i3 {
+background:#f2f2f2;
+}
+#footer .links .i3 {
+padding:2px 12px
+}
+#footer .links .bt, #footer .links .bt div, #footer .links .bb, #footer .links .bb div {
+background-image:url(http://images04.olx.com/images/box-xxx.gif);
+}
+#footer .links .i1, #footer .links .i2 {
+background-image:none
+}
+#footer .countries {
+padding-bottom:30px;
+}
+#footer .countries, #footer .countries a {
+color:#666;
+}
+#footer .countries a {
+text-decoration: underline;
+}
+#footer .countries a:hover {
+color:#000;
+border-bottom:0
+}
+
+/*** MyOlx box ***/
+#my_olx {
+font:1.1em/1.4 tahoma,verdana,arial,sans-serif;
+position:relative;
+float:right;
+text-align:right;
+z-index:100;
+}
+#my_olx a:hover {
+border-bottom:0;
+text-decoration:underline
+}
+#my_olx .my_classifieds {display: none;}
+
+.hidden {visibility:hidden;}
+
+/*** autocomplete ***/
+.autocomplete {
+position:absolute !important;
+z-index:10000 !important;
+float:none !important;
+width:auto !important;
+background:#fff;
+cursor:default;
+font:1.2em/1 arial,helvetica,sans-serif;
+color:#000;
+text-align:left;
+}
+.autocomplete ul {
+float:none !important;
+line-height:1 !important;
+border:1px solid #888;
+}
+.autocomplete ul li {
+float:none !important;
+line-height:1 !important;
+display:block !important;
+padding:2px 5px !important;
+border:0 !important;
+white-space:nowrap;
+font-size:12.4833px !important;
+}
+.autocomplete ul li.selected {
+background-color:#092569;
+color:#fff;
+}
+.autocomplete ul strong.highlight {
+color: #800;
+}
+/*** distance_div ***/
+#distance_div {
+position:absolute;
+top:0;
+left:0
+}
+#distance_selector {
+position: absolute;
+top: 120px;
+left: 225px;
+width: 335px;
+height: 215px;
+z-index: 1000;
+background: url(http://images04.olx.com/images/distance_selector_bk.gif) no-repeat left bottom;
+color: #fff;
+font-size:1.2em;
+text-align:left
+}
+#distance_selector .Container {
+margin: 0 5px;
+padding: 8px 0;
+border-top: 1px solid #ddd;
+font-family:arial,helvetica,sans-serif
+}
+#distance_selector p.Title {
+background: url(http://images04.olx.com/images/distance_selector_bk.gif) no-repeat left top;
+}
+#distance_selector p.Title[class] {
+background-image: url(http://images04.olx.com/images/distance_selector_bk.png);
+}
+#distance_selector[id] {
+background-image: url(http://images04.olx.com/images/distance_selector_bk.png);
+}
+#distance_selector #track1-left {
+position: absolute;
+width: 2px;
+height: 12px;
+background: transparent;
+}
+#distance_selector #track1{
+background: transparent;
+width: 102px;
+height: 12px;
+}
+#distance_selector #handle1 {
+width: 11px;
+height: 12px;
+background: url(http://images03.olx.com/images/slider_complete.png) no-repeat 0 0;
+}
+#distance_selector #handle1 img {
+float: left;
+}
+#distance_selector #slider {
+margin: 4px 0 0 140px;
+padding: 1px 0 0 23px;
+background: url(http://images03.olx.com/images/slider_complete.png) no-repeat -18px 1px;
+}
+
+/*Start new home region selector*/
+
+#home_distance_selector .Line {
+background:transparent
+}
+#home_distance_selector #slider {
+background:transparent url(http://images03.olx.com/images/slider-home_n2.gif) no-repeat 0 100%;
+height:23px;
+padding-left:19px;
+margin:0
+}
+#home_distance_selector #topmask1 {
+background:transparent url(http://images03.olx.com/images/slider-home_n2.gif) no-repeat 0 -19px;
+height:20px;
+position:absolute;
+left:22px;
+top:0;
+width:0;
+}
+#home_distance_selector #track1{
+width:109px;
+height:23px;
+line-height:0
+}
+#home_distance_selector #handle1 {
+background:transparent url(http://images03.olx.com/images/slider-home_n2.gif) no-repeat 0 0;
+width:7px;
+height:17px;
+top:13px;
+position:relative;
+}
+#home_distance_selector #divDistance p {
+width:200px;
+overflow:hidden;
+white-space:nowrap;
+line-height:1.2
+}
+#home_distance_go_with {
+position:absolute;
+right:5px;
+bottom:4.3em
+}
+#home_distance_go {
+position:absolute;
+right:5px;
+bottom:.4em
+}
+#home_distance_go a, #home_distance_go_with a {
+width:30px;
+height:21px;
+display:block;
+text-indent:-1000em;
+background:transparent url(http://images04.olx.com/images/bot_go.gif) no-repeat 0 0;
+border-bottom:0;
+}
+#home_distance_go a:hover, #home_distance_go a:active, #home_distance_go_with a:hover, #home_distance_go_with a:active {
+background-position:0 -21px;
+border-bottom:0
+}
+form#clearzip, form#clearzipdist, #city_filter_form_2 {
+padding:0;
+margin:0
+}
+#city_filter_form_2 br {
+display:none
+}
+#title_set_city2, #set_city_filter2 {
+margin-bottom:5px;
+}
+#set_city_filter2 {
+width:150px;
+display:block
+}
+#divDistance {
+position:relative;
+padding-bottom:25px
+}
+#divDistance p {
+position:absolute;
+left:0;
+bottom:5px;
+color:#999;
+font-size:.9em
+}
+#navigators #home_distance_div {
+border-bottom:1px solid #ccc;
+margin-bottom:5px;
+zoom:1
+}
+#navigators #home_distance_div input {
+font-size:1em
+}
+/*#navigators #home_distance_selector #divDistance p {
+width:180px;
+}*/
+/*end new home region selector*/
+
+
+
+
+#distance_selector p.Title {
+font-family: Tahoma, Verdana, Arial, Sans-Serif;
+margin: 0;
+padding: 7px 17px;
+}
+#distance_selector p.Title a {
+float: right;
+color: #b9d400;
+}
+#distance_selector .Buttons {
+padding: 6px 0 0 0;
+text-align: center;
+font-size:.8em
+}
+#distance_selector .Line {
+background-color: #333;
+margin: 0 0 1px;
+padding: 7px 0;
+width:100%;
+}
+#distance_selector .Line label {
+float: left;
+width: 135px;
+padding: 3px 5px 0 5px;
+}
+#distance_selector .Line select {
+width: 145px;
+font-size:1em
+}
+#distance_selector .Line input {
+width: 140px;
+font-size:1em
+}
+#distance_selector .Line span.City {
+color: #d3d3d3;
+}
+#distance_selector .Line span.Distance {
+color: #ff840e;
+}
+#distance_selector .Line p {
+margin: 0;
+}
+
+.top_banner {
+margin-bottom:6px;
+}
+.top_banner a:hover {
+border:0;
+text-decoration:none
+}
+.ramblerLogo {
+text-align:center
+}
+.ramblerScript, .liveInternet {
+position:absolute;
+top:-1000em;
+left:-1000em
+}
+.dimo {
+margin-top:-3px;
+min-height:25px;
+line-height:22px;
+font-size:11px;
+color:#fff;
+background:#009ED9 url(http://images03.olx.com/images/dimo-logo.gif) no-repeat 0 0;
+padding-left:52px;
+border-bottom:1px solid #ddd
+}
+.dimo strong {
+color:#000
+}
+
+.specialBanner {
+margin-top:-3px;
+min-height:25px;
+line-height:22px;
+font-size:11px;
+color:#fff;
+background:#009ED9 no-repeat 0 0;
+padding-left:10px;
+border-bottom:1px solid #ddd
+}
+.specialBanner strong {
+color:#000
+}
+
+#levelpathBottomHome {
+margin:12px 0 14px;
+padding:6px 8px !important;
+background:#f3f3f3;
+border:1px solid #ddd;
+}
+#levelpath {
+margin:3px 12px 0;
+}
+#levelpathBottom {
+margin:12px 0 24px;
+padding:6px 8px !important;
+background:#f3f3f3;
+border:1px solid #ddd
+}
+.breadcrumb {
+color:#000;
+font-family:tahoma,arial,helvetica,sans-serif;
+font-size:1.1em;
+font-weight:normal;
+line-height:1.2;
+position:relative;
+}
+.breadcrumb * {
+font-weight:normal
+}
+#levelpath .breadcrumb span.wiki,  .breadcrumb span.wiki {
+color:#000 !important;
+}
+#levelpathBottomHome .breadcrumb {
+color:#000
+}
+.spanFlecha {
+font-family:tahoma,arial,sans-serif;
+color:#8d8d8d;
+}
+/*** adbox ***/
+.adbox {
+background:#fff;
+}
+.topone {
+border-bottom:1px solid #ddd
+}
+.bottomone {
+border-top:1px solid #ddd
+}
+.adbox p {
+color:#777777;
+margin:0;
+padding:3px 5px;
+}
+.adbox iframe {
+margin-left:5px;
+width:98%;
+margin-bottom:5px
+}
+* html .adbox iframe {
+width:96%;
+}
+
+/*** site mssgs ***/
+.msg.ok {
+margin-bottom:20px
+}
+.msg.ok.cbb {
+padding:12px 18px;
+border:1px solid #7b0
+}
+.msg.ok br {
+display:none
+}
+.msg.ok p {
+font-size:1.7em;
+color:#7b0;
+padding:2px 12px 2px 25px;
+background:transparent url(http://images04.olx.com/images/ico_ok1.gif) no-repeat 0 50%
+}
+.msg.ok .i3 {
+background:#fff;
+margin-left:13px;
+}
+.msg.ok .bt, .msg.ok .bt div, .msg.ok .bb, .msg.ok .bb div {
+background-image:url(http://images04.olx.com/images/box-7b0.gif);
+height:7px
+}
+.msg.ok .bt, .msg.ok .bb {
+margin:0 0 0 7px;
+}
+.msg.ok .bt div, .msg.ok .bb div {
+left:-7px;
+width:7px;
+}
+.msg.ok .i1, .msg.ok .i2 {
+background-image:url(http://images01.olx.com/images/borders-7b0.gif);
+}
