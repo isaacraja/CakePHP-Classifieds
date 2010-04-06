@@ -1,6 +1,6 @@
 <?php
 class PermissionsController extends AppController {
-    var $name = 'Permissions';
-    var $scaffold;
-}
+	var $name = 'Permissions';
+	var $scaffold;
+  }
 ?>

@@ -5,11 +5,11 @@ class NewslettersController extends AppController
 	var $name = 'Newsletters';
 	var $components = array('Auth');
 	var $paginate = array('Newsletter' => array('limit' => 10,'order' => array('Newsletter.title' => 'asc')
-        ));
+							  ));
 	
 	function beforeFilter()
 	{
-	$this->Auth->allow('index','view','display','admin_index','admin_edit','admin_delete','admin_add','admin_view');
+		$this->Auth->allow('index','view','display','admin_index','admin_edit','admin_delete','admin_add','admin_view');
 	}
 
 	function index()
@@ -20,48 +20,48 @@ class NewslettersController extends AppController
 	function add()
 	{
 		if(!empty($this->data))
-			{
-				$this->Newsletter->save($this->data);
-			}
+		{
+			$this->Newsletter->save($this->data);
+		}
 	}
 	
 	function edit($id)
 	{
 			
-			// pseudo controller code
-			$this->Newsletter->id = $id; // id of Extreme knitting
-			if (empty($this->data))
-			{
-				$this->data = $this->Newsletter->read();
-				//debug($this->data);
-			} 
-			else 
-			{
-				if ($this->Newsletter->save($this->data)) 
-				{
-				 $this->Session->setFlash('Your Newsletter has been updated.');
-				 $this->redirect(array('action' => 'index'));
-				}
-			}
-		}
-		function delete($id)
+		// pseudo controller code
+		$this->Newsletter->id = $id; // id of Extreme knitting
+		if (empty($this->data))
 		{
-			// pseudo controller code
-			$this->Newsletter->id = $id;
-			$this->Newsletter->delete();
-			$this->Session->setFlash('The Newsletter with id: '.$id.' has been deleted.');
-			$this->redirect(array('action'=>'index'));
-		}
-		
-		function view($id)
-		{
-			$this->Newsletter->id = $id;
 			$this->data = $this->Newsletter->read();
 			//debug($this->data);
-			//die;
+		} 
+		else 
+		{
+			if ($this->Newsletter->save($this->data)) 
+			{
+				$this->Session->setFlash('Your Newsletter has been updated.');
+				$this->redirect(array('action' => 'index'));
+			}
 		}
+	}
+	function delete($id)
+	{
+		// pseudo controller code
+		$this->Newsletter->id = $id;
+		$this->Newsletter->delete();
+		$this->Session->setFlash('The Newsletter with id: '.$id.' has been deleted.');
+		$this->redirect(array('action'=>'index'));
+	}
 		
-		function admin_index()
+	function view($id)
+	{
+		$this->Newsletter->id = $id;
+		$this->data = $this->Newsletter->read();
+		//debug($this->data);
+		//die;
+	}
+		
+	function admin_index()
 	{
 		$this->layout = 'admin';
 		//$this->Category->recursive = 0;
@@ -111,14 +111,14 @@ class NewslettersController extends AppController
 		}
 		
 		function admin_delete($id = null) {
-		$this->layout = 'admin';
-		if (!$id) {
-			$this->flash(__('Invalid Newsletter', true), array('action'=>'index'));
-		}
-		if ($this->Newsletter->del($id)) {
-			$this->flash(__('Newsletter deleted', true), array('action'=>'index'));
+			$this->layout = 'admin';
+			if (!$id) {
+				$this->flash(__('Invalid Newsletter', true), array('action'=>'index'));
+			}
+			if ($this->Newsletter->del($id)) {
+				$this->flash(__('Newsletter deleted', true), array('action'=>'index'));
+			}
 		}
 	}
-}
 }
 ?>
