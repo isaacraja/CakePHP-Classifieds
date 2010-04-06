@@ -18,7 +18,8 @@
   		<h1 class="alt">The Classifieds</h1>
 	  </div>
     <div class="span-20 last">
-	    <?php echo $this->element('search_box', array('cache'=>'+1 hour')); ?>        <div id="header-right"class="span-5 last">
+	    <?php echo $this->element('search_box', array('cache'=>'+1 hour')); ?>
+        <div id="header-right"class="span-5 last">
            <div id="header-right-menu">
               <?php echo $html->link('Register/Login','/users/register') ?> 
               <em> | </em> 

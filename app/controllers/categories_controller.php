@@ -316,7 +316,8 @@ class CategoriesController extends AppController {
 		if ($this->Category->del($id)) {
 			$this->flash(__('Post deleted', true), array('action'=>'index'));
 		}
-	}	
+	}
+	
 		
 }
 ?>

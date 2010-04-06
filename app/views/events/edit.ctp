@@ -3,7 +3,8 @@
 <h3>Edit Event</h3>
 <?php 
 echo $form->create('Event');
- //debug($temp3); echo $form->input('name');
+ //debug($temp3);
+ echo $form->input('name');
  echo $form->input('from');
  echo $form->input('to');
  echo $form->input('city');

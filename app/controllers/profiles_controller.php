@@ -18,7 +18,8 @@ class ProfilesController extends AppController
 			$this->set('groups',$this->User->Group->find('list',array('fields' => 'name')));
 			//$this->Auth->autoRedirect = false;
 	
-    } */
+    } */
+
 	function register()
 	{
     if ($this->data)
@@ -136,6 +137,7 @@ function admin_index()
 			$this->redirect(array('action'=>'index'));
 
 		}
-	
+	
+
 } 
 ?>
